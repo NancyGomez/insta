@@ -7,19 +7,40 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 class PostDetailViewController: UIViewController {
+    
+    var post = Post()
+    @IBOutlet weak var usernameLabel: UILabel!
 
+    @IBOutlet weak var postPFImageView: PFImageView!
+    @IBOutlet weak var likesLabel: UILabel!
+    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("IN POST DETAILS: ", post)
+        
+//        print(post.author.username)
+//        usernameLabel.text = post.author.username
+        //likesLabel.text = post.likesCount + " likes"
+        captionLabel.text = post.caption
+        postPFImageView.file = post.media
+        
+        
+        
+        
+        // Do any additional setup after loading the view.
+    }
     @IBAction func onHomePage(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let homePageViewController = storyboard.instantiateViewController(withIdentifier: "homePageViewController")
         self.present(homePageViewController, animated: true, completion: nil)
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

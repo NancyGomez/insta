@@ -71,5 +71,18 @@ class HomePageViewController: UIViewController, UITableViewDataSource {
         cell.postImageView.loadInBackground()
         return cell
     }
+    
+    // Pass information to the detail view controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toDetail") {
+            let cell = sender as! UITableViewCell
+            if let indexPath = tableView.indexPath(for: cell) {
+                let post = posts[indexPath.row]
+                print("TYPE OF: ", type(of: post))
+                let postDetailViewController = segue.destination as! PostDetailViewController
+                postDetailViewController.post = post
+            }
+        }
+    }
 
 }
