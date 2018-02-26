@@ -10,6 +10,7 @@
 		21AB5252C5E14BA09AA25B4B /* Pods_insta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D98EE10446483CA6B19E90E /* Pods_insta.framework */; };
 		88D21520ADA86272201D6693 /* Pods_instaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9426586D590B2EDABF0BD7 /* Pods_instaUITests.framework */; };
 		B8356983204359CE00982256 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8356982204359CE00982256 /* LoginViewController.swift */; };
+		B8C2C2DF2043A59100DF368D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */; };
 		B8CC3457204351740012A567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC3456204351740012A567 /* AppDelegate.swift */; };
 		B8CC3459204351740012A567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC3458204351740012A567 /* ViewController.swift */; };
 		B8CC345C204351740012A567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC345A204351740012A567 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		9547728CF0FA733EDCF24948 /* Pods-insta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-insta/Pods-insta.debug.xcconfig"; sourceTree = "<group>"; };
 		AB8D82B95BF0518C5E37CB7C /* Pods-instaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instaTests/Pods-instaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8356982204359CE00982256 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		B8CC3453204351740012A567 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CC3456204351740012A567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CC3458204351740012A567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				B8CC345F204351740012A567 /* LaunchScreen.storyboard */,
 				B8CC3462204351740012A567 /* Info.plist */,
 				B8356982204359CE00982256 /* LoginViewController.swift */,
+				B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */,
 			);
 			path = insta;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C2C2DF2043A59100DF368D /* HomePageViewController.swift in Sources */,
 				B8356983204359CE00982256 /* LoginViewController.swift in Sources */,
 				B8CC3459204351740012A567 /* ViewController.swift in Sources */,
 				B8CC3457204351740012A567 /* AppDelegate.swift in Sources */,
