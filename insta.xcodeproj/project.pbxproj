@@ -14,8 +14,8 @@
 		B8C94DA32043C3CD004D0836 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C94DA22043C3CD004D0836 /* Post.swift */; };
 		B8C94DA62043D2FB004D0836 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C94DA52043D2FB004D0836 /* NewPostViewController.swift */; };
 		B8C9BA312043E1BE000A4CA8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9BA302043E1BE000A4CA8 /* PostCell.swift */; };
+		B8C9BA332044C150000A4CA8 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9BA322044C150000A4CA8 /* PostDetailViewController.swift */; };
 		B8CC3457204351740012A567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC3456204351740012A567 /* AppDelegate.swift */; };
-		B8CC3459204351740012A567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC3458204351740012A567 /* ViewController.swift */; };
 		B8CC345C204351740012A567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC345A204351740012A567 /* Main.storyboard */; };
 		B8CC345E204351740012A567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CC345D204351740012A567 /* Assets.xcassets */; };
 		B8CC3461204351740012A567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC345F204351740012A567 /* LaunchScreen.storyboard */; };
@@ -53,9 +53,9 @@
 		B8C94DA22043C3CD004D0836 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B8C94DA52043D2FB004D0836 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		B8C9BA302043E1BE000A4CA8 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B8C9BA322044C150000A4CA8 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		B8CC3453204351740012A567 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CC3456204351740012A567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8CC3458204351740012A567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8CC345B204351740012A567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8CC345D204351740012A567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8CC3460204351740012A567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				B8356982204359CE00982256 /* LoginViewController.swift */,
 				B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */,
 				B8C94DA52043D2FB004D0836 /* NewPostViewController.swift */,
-				B8CC3458204351740012A567 /* ViewController.swift */,
+				B8C9BA322044C150000A4CA8 /* PostDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -494,9 +494,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8C9BA312043E1BE000A4CA8 /* PostCell.swift in Sources */,
+				B8C9BA332044C150000A4CA8 /* PostDetailViewController.swift in Sources */,
 				B8C2C2DF2043A59100DF368D /* HomePageViewController.swift in Sources */,
 				B8356983204359CE00982256 /* LoginViewController.swift in Sources */,
-				B8CC3459204351740012A567 /* ViewController.swift in Sources */,
 				B8CC3457204351740012A567 /* AppDelegate.swift in Sources */,
 				B8C94DA32043C3CD004D0836 /* Post.swift in Sources */,
 				B8C94DA62043D2FB004D0836 /* NewPostViewController.swift in Sources */,

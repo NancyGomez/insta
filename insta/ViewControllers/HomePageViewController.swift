@@ -13,7 +13,8 @@ import ParseUI
 class HomePageViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-     var posts: [Post] = []
+    var posts: [Post] = []
+    var refreshControl : UIRefreshControl!
     
     @IBAction func onLogOut(_ sender: Any) {
         NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
@@ -34,13 +35,20 @@ class HomePageViewController: UIViewController, UITableViewDataSource {
                 print(error?.localizedDescription)
             }
         })
-        
-        
+        refreshControl.endRefreshing()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(HomePageViewController.didPullToReFresh(_:)), for: .valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
         tableView.dataSource = self
+        fetchPosts()
+    }
+    
+    @objc func didPullToReFresh(_ refreshControl: UIRefreshControl){
         fetchPosts()
     }
 
