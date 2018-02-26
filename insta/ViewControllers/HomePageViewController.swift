@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import ParseUI
 
 class HomePageViewController: UIViewController, UITableViewDataSource {
 
@@ -49,14 +50,17 @@ class HomePageViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        print("Posts count: ", posts.count)
+        return posts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
-//        let post = posts[indexPath.section]
-//        cell.postCaptionLabel.text = post.caption
-//        cell.postImageView.file = post.media
-//        cell.postImageView.loadInBackground()
+        let post = posts[indexPath.row]
+        cell.postCaptionLabel.text = post.caption
+        print(post.media)
+        print(cell.postImageView)
+        cell.postImageView.file = post.media
+        cell.postImageView.loadInBackground()
         return cell
     }
 

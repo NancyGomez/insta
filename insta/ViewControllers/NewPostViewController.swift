@@ -8,13 +8,15 @@
 
 import UIKit
 import Parse
+import ParseUI
 
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // Instantiate a UIImagePickerController
     var vc : UIImagePickerController!
     
-    @IBOutlet weak var newPostImageView: UIImageView!
+    @IBOutlet weak var newPostPFImageView: PFImageView!
+    
     @IBOutlet weak var newPostCaptionTextField: UITextField!
     
     @IBAction func onImageClick(_ sender: Any) {
@@ -25,7 +27,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
 
     @IBAction func onPost(_ sender: Any) {
-        Post.postUserImage(image: newPostImageView.image, withCaption: newPostCaptionTextField.text) {
+        Post.postUserImage(image: newPostPFImageView.image, withCaption: newPostCaptionTextField.text) {
             (success, error) in
             if success{
                 print("Image upload successful!")
@@ -85,7 +87,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         let editedImage = resize(image: originalImage, newSize: CGSize(width: 300, height: 300))
         
         // Do something with the images (based on your use case)
-        newPostImageView.image = editedImage
+        newPostPFImageView.image = editedImage
         // TODO: set image view to edited image or something like that
         
         // Dismiss UIImagePickerController to go back to your original view controller

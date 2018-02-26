@@ -89,7 +89,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mz0-ge-zeq">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mz0-ge-zeq" customClass="PFImageView">
                                                     <rect key="frame" x="15" y="40" width="345" height="272"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.59583875870000003" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,7 +154,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRZ-b7-hJl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRZ-b7-hJl" customClass="PFImageView">
                                 <rect key="frame" x="16" y="93" width="343" height="281"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.59583875870000003" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,7 +188,7 @@
                     <navigationItem key="navigationItem" id="Op4-8i-l4e"/>
                     <connections>
                         <outlet property="newPostCaptionTextField" destination="D7g-Qp-W5j" id="pb3-5b-OUe"/>
-                        <outlet property="newPostImageView" destination="WRZ-b7-hJl" id="Z6m-YG-HnN"/>
+                        <outlet property="newPostPFImageView" destination="WRZ-b7-hJl" id="lRa-Ff-TJh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7FP-XL-yVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
