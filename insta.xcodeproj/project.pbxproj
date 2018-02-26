@@ -12,6 +12,7 @@
 		B8356983204359CE00982256 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8356982204359CE00982256 /* LoginViewController.swift */; };
 		B8C2C2DF2043A59100DF368D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */; };
 		B8C94DA32043C3CD004D0836 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C94DA22043C3CD004D0836 /* Post.swift */; };
+		B8C94DA62043D2FB004D0836 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C94DA52043D2FB004D0836 /* NewPostViewController.swift */; };
 		B8CC3457204351740012A567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC3456204351740012A567 /* AppDelegate.swift */; };
 		B8CC3459204351740012A567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC3458204351740012A567 /* ViewController.swift */; };
 		B8CC345C204351740012A567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC345A204351740012A567 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		B8356982204359CE00982256 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		B8C94DA22043C3CD004D0836 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B8C94DA52043D2FB004D0836 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		B8CC3453204351740012A567 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CC3456204351740012A567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CC3458204351740012A567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B8C94DA42043D2CB004D0836 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8356982204359CE00982256 /* LoginViewController.swift */,
+				B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */,
+				B8C94DA52043D2FB004D0836 /* NewPostViewController.swift */,
+				B8CC3458204351740012A567 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B8C94DA72043D33D004D0836 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				B8C94DA22043C3CD004D0836 /* Post.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		B8CC344A204351740012A567 = {
 			isa = PBXGroup;
 			children = (
@@ -133,15 +154,13 @@
 		B8CC3455204351740012A567 /* insta */ = {
 			isa = PBXGroup;
 			children = (
+				B8C94DA72043D33D004D0836 /* Custom */,
+				B8C94DA42043D2CB004D0836 /* ViewControllers */,
 				B8CC3456204351740012A567 /* AppDelegate.swift */,
-				B8CC3458204351740012A567 /* ViewController.swift */,
 				B8CC345A204351740012A567 /* Main.storyboard */,
 				B8CC345D204351740012A567 /* Assets.xcassets */,
 				B8CC345F204351740012A567 /* LaunchScreen.storyboard */,
 				B8CC3462204351740012A567 /* Info.plist */,
-				B8356982204359CE00982256 /* LoginViewController.swift */,
-				B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */,
-				B8C94DA22043C3CD004D0836 /* Post.swift */,
 			);
 			path = insta;
 			sourceTree = "<group>";
@@ -474,6 +493,7 @@
 				B8CC3459204351740012A567 /* ViewController.swift in Sources */,
 				B8CC3457204351740012A567 /* AppDelegate.swift in Sources */,
 				B8C94DA32043C3CD004D0836 /* Post.swift in Sources */,
+				B8C94DA62043D2FB004D0836 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

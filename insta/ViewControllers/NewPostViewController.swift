@@ -1,5 +1,5 @@
 //
-//  HomePageViewController.swift
+//  NewPostViewController.swift
 //  insta
 //
 //  Created by Nancy Gomez on 2/25/18.
@@ -9,22 +9,36 @@
 import UIKit
 import Parse
 
-class HomePageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource {
+class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // Instantiate a UIImagePickerController
     var vc : UIImagePickerController!
-
-    @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func onLogOut(_ sender: Any) {
-        NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
+    @IBOutlet weak var newPostImageView: UIImageView!
+    @IBOutlet weak var newPostCaptionTextField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        // Do any additional setup after loading the view.
+        chooseImage()
+        
+    }
+
+    @IBAction func onPost(_ sender: Any) {
+        // call post method
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onNewPost(_ sender: Any) {
+    func chooseImage() {
         vc = UIImagePickerController()
         vc.delegate = self
         vc.allowsEditing = true
-        
+
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             print("Camera is available 📸")
             vc.sourceType = .camera
@@ -32,18 +46,8 @@ class HomePageViewController: UIViewController, UIImagePickerControllerDelegate,
             print("Camera 🚫 available so we will use photo library instead")
             vc.sourceType = .photoLibrary
         }
-        
-        self.present(vc, animated: true, completion: nil)
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.dataSource = self
-        
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.present(vc, animated: true, completion: nil)
     }
     
     // Implement the delegate method
@@ -60,18 +64,4 @@ class HomePageViewController: UIViewController, UIImagePickerControllerDelegate,
         // Dismiss UIImagePickerController to go back to your original view controller
         dismiss(animated: true, completion: nil)
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
-            //as! PostCell
-//        let post = posts[indexPath.section]
-//        cell.captionLabel.text = post.caption
-//        cell.postImageView.file = post.media
-//        cell.postImageView.loadInBackground()
-        return cell
-    }
-
 }
