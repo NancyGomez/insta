@@ -36,8 +36,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
                 print(error?.localizedDescription)
             }
         }
-        
-        
+        goBack()
         
     }
     override func didReceiveMemoryWarning() {
@@ -59,6 +58,12 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
 
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    func goBack(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homePageViewController = storyboard.instantiateViewController(withIdentifier: "homePageViewController")
+        self.present(homePageViewController, animated: true, completion: nil)
     }
     
     // helper function

@@ -65,7 +65,7 @@
         <!--Home Page View Controller-->
         <scene sceneID="Ccj-Ps-JXh">
             <objects>
-                <viewController id="lni-IB-FDJ" customClass="HomePageViewController" customModule="insta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homePageViewController" id="lni-IB-FDJ" customClass="HomePageViewController" customModule="insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0XF-1M-zeG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +167,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
-                                    <action selector="onPost:" destination="iWf-5f-cDZ" eventType="touchUpInside" id="0Uu-t5-Goh"/>
+                                    <action selector="onPost:" destination="iWf-5f-cDZ" eventType="touchUpInside" id="6ET-lS-dze"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,6 +187,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Bhu-Kx-FEB">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yu0-Gp-wqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FV9-hn-AbN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zIK-nh-yf1">
@@ -198,7 +199,6 @@
                         <segue destination="lni-IB-FDJ" kind="relationship" relationship="rootViewController" id="Eia-6V-WRE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yu0-Gp-wqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="265" y="133"/>
         </scene>
