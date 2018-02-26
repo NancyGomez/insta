@@ -27,7 +27,18 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
 
     @IBAction func onPost(_ sender: Any) {
-        // call post method
+        Post.postUserImage(image: newPostImageView.image, withCaption: newPostCaptionTextField.text) {
+            (success, error) in
+            if success{
+                print("Image upload successful!")
+            }
+            else{
+                print(error?.localizedDescription)
+            }
+        }
+        
+        
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -50,18 +61,38 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.present(vc, animated: true, completion: nil)
     }
     
+    // helper function
+    func resize(image: UIImage, newSize: CGSize) -> UIImage {
+        let resizeImageView = UIImageView(frame: CGRect(0, 0, newSize.width, newSize.height))
+        resizeImageView.contentMode = UIViewContentMode.scaleAspectFill
+        resizeImageView.image = image
+        
+        UIGraphicsBeginImageContext(resizeImageView.frame.size)
+        resizeImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
+    
     // Implement the delegate method
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [String : Any]) {
         // Get the image captured by the UIImagePickerController
         let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
-        // TODO: resize the image for storing in DB
+        let editedImage = resize(image: originalImage, newSize: CGSize(width: 300, height: 300))
         
         // Do something with the images (based on your use case)
+        newPostImageView.image = editedImage
         // TODO: set image view to edited image or something like that
         
         // Dismiss UIImagePickerController to go back to your original view controller
         dismiss(animated: true, completion: nil)
+    }
+    
+}
+// helper
+extension CGRect {
+    init(_ x:CGFloat, _ y:CGFloat, _ w:CGFloat, _ h:CGFloat) {
+        self.init(x:x, y:y, width:w, height:h)
     }
 }
