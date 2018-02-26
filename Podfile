@@ -6,6 +6,7 @@ target 'insta' do
   use_frameworks!
 
   pod 'Parse'
+  pod 'ParseUI'
 
   target 'instaTests' do
     inherit! :search_paths

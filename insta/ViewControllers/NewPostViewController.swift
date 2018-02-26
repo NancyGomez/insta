@@ -17,13 +17,11 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var newPostImageView: UIImageView!
     @IBOutlet weak var newPostCaptionTextField: UITextField!
     
+    @IBAction func onImageClick(_ sender: Any) {
+        chooseImage()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        // Do any additional setup after loading the view.
-        chooseImage()
-        
     }
 
     @IBAction func onPost(_ sender: Any) {

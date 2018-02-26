@@ -13,6 +13,7 @@
 		B8C2C2DF2043A59100DF368D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */; };
 		B8C94DA32043C3CD004D0836 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C94DA22043C3CD004D0836 /* Post.swift */; };
 		B8C94DA62043D2FB004D0836 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C94DA52043D2FB004D0836 /* NewPostViewController.swift */; };
+		B8C9BA312043E1BE000A4CA8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9BA302043E1BE000A4CA8 /* PostCell.swift */; };
 		B8CC3457204351740012A567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC3456204351740012A567 /* AppDelegate.swift */; };
 		B8CC3459204351740012A567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC3458204351740012A567 /* ViewController.swift */; };
 		B8CC345C204351740012A567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CC345A204351740012A567 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		B8C2C2DE2043A59100DF368D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		B8C94DA22043C3CD004D0836 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B8C94DA52043D2FB004D0836 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		B8C9BA302043E1BE000A4CA8 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B8CC3453204351740012A567 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CC3456204351740012A567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CC3458204351740012A567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				B8C94DA22043C3CD004D0836 /* Post.swift */,
+				B8C9BA302043E1BE000A4CA8 /* PostCell.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -422,11 +425,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-insta/Pods-insta-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -488,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C9BA312043E1BE000A4CA8 /* PostCell.swift in Sources */,
 				B8C2C2DF2043A59100DF368D /* HomePageViewController.swift in Sources */,
 				B8356983204359CE00982256 /* LoginViewController.swift in Sources */,
 				B8CC3459204351740012A567 /* ViewController.swift in Sources */,
