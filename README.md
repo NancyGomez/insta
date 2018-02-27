@@ -2,7 +2,7 @@
 
 **Instagram** is a photo sharing app using Parse as its backend.
 
-Time spent: **15** hours spent in total
+Time spent: **22** hours spent in total
 
 ## User Stories
 
@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 - [x] User can take a photo, add a caption, and post it to "Instagram" (+2pt)
 - [x] User can view the last 20 posts submitted to "Instagram" (+2pt)
 - [x] User can pull to refresh the last 20 posts submitted to "Instagram" (+1pt)
-- [ ] User can tap a post to view post details, including timestamp and caption (+2pt)
+- [x] User can tap a post to view post details, including timestamp and caption (+2pt)
 
 The following **stretch** features are implemented:
 
@@ -48,7 +48,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.gyazo.com/87ddac0b6864c16ec8a5520c871c085d.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Credits
 
