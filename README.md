@@ -59,7 +59,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Everything. The information felt so cluttered and overwhelming sometimes. The depracated code wasn't much help, some of the information/ documentation was superfluous. It was much more work than the previous assignments so I was definitely not expecting to be stuck for hours on end. Really wish there were more videos for this one.  
 
 ## License
 
