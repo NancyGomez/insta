@@ -84,5 +84,11 @@ class HomePageViewController: UIViewController, UITableViewDataSource {
             }
         }
     }
+    
+    func goBack(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homePageViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+        self.present(homePageViewController, animated: true, completion: nil)
+    }
 
 }

@@ -35,19 +35,19 @@ class PostDetailViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    @IBAction func onHomePage(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homePageViewController = storyboard.instantiateViewController(withIdentifier: "homePageViewController")
-        self.present(homePageViewController, animated: true, completion: nil)
-    }
-    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func onHomePage(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homePageViewController = storyboard.instantiateViewController(withIdentifier: "homePageViewController")
+        self.present(homePageViewController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

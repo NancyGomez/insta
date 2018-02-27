@@ -15,6 +15,11 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     // Instantiate a UIImagePickerController
     var vc : UIImagePickerController!
     
+    @IBAction func onHomePage(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homePageViewController = storyboard.instantiateViewController(withIdentifier: "homePageViewController")
+        self.present(homePageViewController, animated: true, completion: nil)
+    }
     @IBOutlet weak var newPostPFImageView: PFImageView!
     
     @IBOutlet weak var newPostCaptionTextField: UITextField!
@@ -27,17 +32,17 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
 
     @IBAction func onPost(_ sender: Any) {
+        print("Post clicked")
         Post.postUserImage(image: newPostPFImageView.image, withCaption: newPostCaptionTextField.text) {
             (success, error) in
             if success{
                 print("Image upload successful!")
             }
             else{
-                print(error?.localizedDescription)
+                print("Error: ", error?.localizedDescription)
             }
         }
         goBack()
-        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
